@@ -359,7 +359,9 @@ class MultiHeadAttention(nn.Module):
         attn = torch.softmax(scores, dim=-1)
         out = attn @ V
         # 合并头
-        out = out.transpose(1, 2).contiguous().view(batch_size, -1, self.n_heads * self.d_k)
+        out = out.transpose(1, 2).contiguous().view(
+            batch_size, -1, self.n_heads * self.d_k
+        )
         return self.W_O(out)
 
 

@@ -106,7 +106,7 @@ $$D_{KL}(P \parallel Q) = \sum_i P_i \log \frac{P_i}{Q_i}$$
 
 | 方法 | 公式 | 效果 |
 |:----|:-----|:-----|
-| L1 正则化（Lasso） | $\lambda \sum |w_i|$ | 产生稀疏权重（部分归零） |
+| L1 正则化（Lasso） | $\lambda \sum \lvert w_i \rvert$ | 产生稀疏权重（部分归零） |
 | L2 正则化（Ridge） | $\frac{\lambda}{2} \sum w_i^2$ | 权重衰减（趋向于0但不为0） |
-| Dropout | 训练时随机丢弃 $p$% 神经元 | 集成学习效果，防过拟合 |
+| Dropout | 训练时随机丢弃 $p$\\% 神经元 | 集成学习效果，防过拟合 |
 | Batch Normalization | $\hat{x} = \frac{x - \mu}{\sigma} \cdot \gamma + \beta$ | 稳定训练，加速收敛 |

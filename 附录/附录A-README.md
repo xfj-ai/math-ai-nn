@@ -28,9 +28,9 @@
 
 ### A-1-3 偏导数与梯度
 
-对于多变量函数 $f(x_1, x_2, ..., x_n)$，偏导数 $\frac{\partial f}{\partial x_i}$ 表示固定其他变量时 $f$ 对 $x_i$ 的变化率。
+对于多变量函数 $f(x_1, x_2, \dots, x_n)$，偏导数 $\frac{\partial f}{\partial x_i}$ 表示固定其他变量时 $f$ 对 $x_i$ 的变化率。
 
-**梯度向量**：$\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, ..., \frac{\partial f}{\partial x_n} \right)$
+**梯度向量**：$\nabla f = \left( \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2}, \dots, \frac{\partial f}{\partial x_n} \right)$
 
 ### A-1-4 泰勒展开
 
